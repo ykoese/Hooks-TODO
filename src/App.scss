@@ -1,0 +1,121 @@
+// Import font-family
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,400i,700');
+
+.todo-list {
+  max-width: 370px;
+  margin: 0 auto;
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  button {
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+  }
+  input {
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 0.5rem 0;
+    padding-left: 1rem;
+  }
+}
+
+.head {
+  color: #332d36; 
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.todo-form {
+  margin: 0 auto;
+  display: flex;
+  flex-grow: 1;
+  #todoValue {
+    display: block;
+    width: 100%;
+    border : 2px solid #e19a30;
+    font-size: 1.1rem;
+    color: #332d36;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    color: #fff;
+    font-size: 1.2rem;
+    display: block;
+    width: 150px;
+    padding: 0.5rem 0;
+    background: #e19a30;
+    border: none;
+  }
+}
+
+// Style for To-dos
+.todos {
+  margin: 1.5rem 0; 
+}
+
+.todo-block {
+  border-radius: 3px;
+  display: flex;
+  border: 2px solid #332d36;
+  background: #ee9e26;
+  margin: 1rem 0;
+  justify-content: center;
+  
+ 
+  #dates {
+  
+    background: #00d4d4; 
+    margin: 0;
+    border: none;
+    height: auto;
+    text-align: center;
+    button{
+      text-align: left;
+    }
+
+}
+
+  button {
+    background: transparent;
+    border: none;
+    display: block;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    text-align: start;
+    &:focus {
+      outline: none;
+    }
+ 
+
+  }
+
+
+
+  button:nth-child(1) {
+   /*  flex-grow: 1; */
+    color : #fff;
+    
+  }
+  button:nth-child(2) {
+    flex-grow: 1
+  }
+}
+
+.delete-todo {
+  &:hover {
+    background: #f44336	;
+    color: #fff;
+  }
+}
+
+.done {
+  text-decoration: line-through;
+ 
+  
+}
+
+.todo-block:nth-child(even) {
+  background: #9e9ca0;
+}
+
